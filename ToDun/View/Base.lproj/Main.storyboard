@@ -31,7 +31,14 @@
                             <outlet property="delegate" destination="cax-ra-BiE" id="IZm-BA-XkE"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ToDun" id="gEo-B7-7rq"/>
+                    <navigationItem key="navigationItem" title="ToDun" id="gEo-B7-7rq">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="EhA-bA-B7B">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="cax-ra-BiE" id="cHb-Fj-hMe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gsh-1h-nd3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
