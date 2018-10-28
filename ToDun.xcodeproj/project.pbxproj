@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1BD897792181EDCF00EEECF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD897782181EDCF00EEECF3 /* AppDelegate.swift */; };
-		1BD8977B2181EDCF00EEECF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD8977A2181EDCF00EEECF3 /* ViewController.swift */; };
+		1BD8977B2181EDCF00EEECF3 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD8977A2181EDCF00EEECF3 /* TodoListViewController.swift */; };
 		1BD8977E2181EDCF00EEECF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD8977C2181EDCF00EEECF3 /* Main.storyboard */; };
 		1BD897802181EDD000EEECF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BD8977F2181EDD000EEECF3 /* Assets.xcassets */; };
 		1BD897832181EDD000EEECF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD897812181EDD000EEECF3 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		1BD897752181EDCF00EEECF3 /* ToDun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD897782181EDCF00EEECF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1BD8977A2181EDCF00EEECF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1BD8977A2181EDCF00EEECF3 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		1BD8977D2181EDCF00EEECF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BD8977F2181EDD000EEECF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BD897822181EDD000EEECF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +54,38 @@
 		1BD897772181EDCF00EEECF3 /* ToDun */ = {
 			isa = PBXGroup;
 			children = (
-				1BD897782181EDCF00EEECF3 /* AppDelegate.swift */,
-				1BD8977A2181EDCF00EEECF3 /* ViewController.swift */,
-				1BD8977C2181EDCF00EEECF3 /* Main.storyboard */,
+				1BD9184021833E3600DA9B21 /* Model */,
+				1BD9184121833E4000DA9B21 /* View */,
+				1BD9184221833E4500DA9B21 /* Controller */,
 				1BD8977F2181EDD000EEECF3 /* Assets.xcassets */,
-				1BD897812181EDD000EEECF3 /* LaunchScreen.storyboard */,
 				1BD897842181EDD000EEECF3 /* Info.plist */,
 			);
 			path = ToDun;
+			sourceTree = "<group>";
+		};
+		1BD9184021833E3600DA9B21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1BD9184121833E4000DA9B21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1BD897812181EDD000EEECF3 /* LaunchScreen.storyboard */,
+				1BD8977C2181EDCF00EEECF3 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1BD9184221833E4500DA9B21 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1BD897782181EDCF00EEECF3 /* AppDelegate.swift */,
+				1BD8977A2181EDCF00EEECF3 /* TodoListViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BD8977B2181EDCF00EEECF3 /* ViewController.swift in Sources */,
+				1BD8977B2181EDCF00EEECF3 /* TodoListViewController.swift in Sources */,
 				1BD897792181EDCF00EEECF3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.eleuterio.ToDun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +334,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.eleuterio.ToDun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
