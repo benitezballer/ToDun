@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03251EE13431216B4A4DF6B7 /* Pods_ToDun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F546EAE7ECFE48E0C22488D8 /* Pods_ToDun.framework */; };
 		1B443BEB218B249A0033D1D9 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B443BE9218B249A0033D1D9 /* DataModel.xcdatamodeld */; };
 		1B78B923219469CB00A96676 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B78B922219469CB00A96676 /* CategoryViewController.swift */; };
 		1BD897792181EDCF00EEECF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD897782181EDCF00EEECF3 /* AppDelegate.swift */; };
@@ -26,6 +27,9 @@
 		1BD8977F2181EDD000EEECF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BD897822181EDD000EEECF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BD897842181EDD000EEECF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F8DFEF47E7502288754F409 /* Pods-ToDun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDun.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToDun/Pods-ToDun.release.xcconfig"; sourceTree = "<group>"; };
+		7AE2566BE7A1D5EBDD5715FC /* Pods-ToDun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToDun/Pods-ToDun.debug.xcconfig"; sourceTree = "<group>"; };
+		F546EAE7ECFE48E0C22488D8 /* Pods_ToDun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03251EE13431216B4A4DF6B7 /* Pods_ToDun.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +58,8 @@
 			children = (
 				1BD897772181EDCF00EEECF3 /* ToDun */,
 				1BD897762181EDCF00EEECF3 /* Products */,
+				C32F06A4A777BB602F6B416B /* Pods */,
+				60C908B7F15FBCA79F4A717B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +109,23 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		60C908B7F15FBCA79F4A717B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F546EAE7ECFE48E0C22488D8 /* Pods_ToDun.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C32F06A4A777BB602F6B416B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7AE2566BE7A1D5EBDD5715FC /* Pods-ToDun.debug.xcconfig */,
+				6F8DFEF47E7502288754F409 /* Pods-ToDun.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BD897872181EDD000EEECF3 /* Build configuration list for PBXNativeTarget "ToDun" */;
 			buildPhases = (
+				E9850D92CC9696C125AC884B /* [CP] Check Pods Manifest.lock */,
 				1BD897712181EDCF00EEECF3 /* Sources */,
 				1BD897722181EDCF00EEECF3 /* Frameworks */,
 				1BD897732181EDCF00EEECF3 /* Resources */,
+				AE2FD1BF611796F9F9518375 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +193,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE2FD1BF611796F9F9518375 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ToDun/Pods-ToDun-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToDun/Pods-ToDun-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9850D92CC9696C125AC884B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToDun-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1BD897712181EDCF00EEECF3 /* Sources */ = {
@@ -320,6 +395,7 @@
 		};
 		1BD897882181EDD000EEECF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AE2566BE7A1D5EBDD5715FC /* Pods-ToDun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -338,6 +414,7 @@
 		};
 		1BD897892181EDD000EEECF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F8DFEF47E7502288754F409 /* Pods-ToDun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
